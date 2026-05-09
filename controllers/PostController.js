@@ -100,7 +100,7 @@ exports.readAllPost = async(req, res) => {
         const userId = req.body.user_id;
         // console.log("userid", userId);
         const allPost = await Post.find({user_id:userId}).sort({createdAt: -1})   // .populate('User');
-        // console.log("all post", allPost.length, allPost);
+        console.log("all post", allPost.length, allPost);
 
         return res.status(200).json({
             message: "success",
