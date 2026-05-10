@@ -20,10 +20,11 @@ app.use(bodyParser.json());
 //   credentials: true
 // }));
 
+// app.use(cors());
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://dy2-three.vercel.app"
+    "https://dy2-frontend.vercel.app"
   ],
   credentials: true
 }));
